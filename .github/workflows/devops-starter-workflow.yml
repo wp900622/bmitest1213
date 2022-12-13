@@ -35,7 +35,7 @@ jobs:
       run: |
         mkdir testresults
         pip install pytest-cov 
-        pip install pytest && pytest --cov=./ --cov-config=.coveragerc Tests/unit_tests --junitxml=./testresults/test-results.xml && pip install pycmd && py.cleanup Tests/
+        pip install pytest && pytest --cov=./ --cov-config=.coveragerc --cov-report term-missing Tests/unit_tests --junitxml=./testresults/test-results.xml && pip install pycmd && py.cleanup Tests/
 
     - uses: actions/checkout@v3
       with:
