@@ -15,6 +15,7 @@ env:
   SONAR_HOST_URL: "http://20.249.216.75/"
   SKU: "S1 Standard"
 
+
 jobs:
   Build:
     name: Build and Run tests
