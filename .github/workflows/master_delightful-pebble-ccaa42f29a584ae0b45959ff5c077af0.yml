@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r Application/requirements.txt
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'delightful-pebble-ccaa42f29a584ae0b45959ff5c077af0'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D005CD57FC454CFBB559FA345B7AF794 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_99D323436BD6402292CE9D3EF6C58701 }}
